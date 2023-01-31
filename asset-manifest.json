@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Test-Lab/static/css/main.fa427ada.css",
+    "main.css": "/Test-Lab/static/css/main.c3f81707.css",
     "main.js": "/Test-Lab/static/js/main.b871fb8c.js",
     "static/media/eyeOff.svg": "/Test-Lab/static/media/eyeOff.984301238b0ca953476d5e43225d4562.svg",
     "index.html": "/Test-Lab/index.html",
     "static/media/eyeOn.svg": "/Test-Lab/static/media/eyeOn.2a70fca99e44d5727edf6b7a4455350f.svg",
-    "main.fa427ada.css.map": "/Test-Lab/static/css/main.fa427ada.css.map",
+    "main.c3f81707.css.map": "/Test-Lab/static/css/main.c3f81707.css.map",
     "main.b871fb8c.js.map": "/Test-Lab/static/js/main.b871fb8c.js.map"
   },
   "entrypoints": [
-    "static/css/main.fa427ada.css",
+    "static/css/main.c3f81707.css",
     "static/js/main.b871fb8c.js"
   ]
 }
