@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Test-Lab/static/css/main.84b97887.css",
+    "main.js": "/Test-Lab/static/js/main.70d0e1f5.js",
+    "index.html": "/Test-Lab/index.html",
+    "main.84b97887.css.map": "/Test-Lab/static/css/main.84b97887.css.map",
+    "main.70d0e1f5.js.map": "/Test-Lab/static/js/main.70d0e1f5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.84b97887.css",
+    "static/js/main.70d0e1f5.js"
+  ]
+}
