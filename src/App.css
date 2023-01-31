@@ -31,7 +31,7 @@
   left: 50%;
   width: 0;
   height: 2px;
-  background-color: #47ccd0;
+  background-color: #4caf50;
   transition: 0.4s;
 }
 .app__block-text:focus + .focus-border {
@@ -39,9 +39,7 @@
   transition: 0.4s;
   left: 0;
 }
-/* .app__block-password:focus {
-  border-color: #27a360;
-} */
+
 .app__block-checkbox {
   display: none;
 }
