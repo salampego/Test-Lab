@@ -1,15 +1,16 @@
 import { useEffect, useState } from "react";
+import { EyeOff, EyeOn } from "./svg";
 import "./App.css";
 
 function App() {
   const [password, setPassword] = useState("");
   const [status, setStatus] = useState("");
+  const [checked, setChecked] = useState(false);
 
   useEffect(() => {
-    const letter = password.match(/[a-z]/g);
+    const letter = password.match(/[a-zA-Z]*/g);
     const symbols = password.match(/[!,@,#,$,%,^,&,*,?,_,~,-,(,),",']/g);
     const number = password.match(/\d+/g);
-    console.log(Boolean(password.length >= 8));
 
     if (password === "") {
       setStatus("noPassword");
@@ -34,19 +35,38 @@ function App() {
     }
   }, [password]);
 
-  const onChange = (e) => {
+  const onChangePassword = (e) => {
     setPassword(e.target.value.trim());
+  };
+
+  const onChangeType = () => {
+    setChecked(!checked);
   };
 
   return (
     <div className="app">
-      <div className="app__block-input">
+      <div className="app__block-label">
+        <div className="app__block-password">
+          <input
+            onChange={onChangePassword}
+            className="app__block-text"
+            type={checked ? "text" : "password"}
+          ></input>
+          <span className="focus-border"></span>
+        </div>
         <input
-          onChange={onChange}
-          value={password}
-          className="app__block-password"
-          type="text"
-        ></input>
+          type="checkbox"
+          className="app__block-checkbox"
+          id="openPassword"
+          onChange={onChangeType}
+        />
+        <label htmlFor="openPassword" className="app__block-svg">
+          {checked ? (
+            <EyeOff width="24" height="20" />
+          ) : (
+            <EyeOn width="24" height="20" />
+          )}
+        </label>
       </div>
       <div className="app__indicator">
         <span className={`app__indicator-item ${status}`}></span>
