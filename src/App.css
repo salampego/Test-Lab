@@ -88,3 +88,12 @@
 .strong {
   background: #4adb10;
 }
+
+.text__status-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text__status-easy {
+}
