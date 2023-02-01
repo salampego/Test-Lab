@@ -5,7 +5,7 @@ import { PasswordForm } from "./passwordForm/passwordForm";
 
 function App() {
   const [password, setPassword] = useState("");
-  const [status, setStatus] = useState("");
+  const [status, setStatus] = useState("noPassword");
   const [checked, setChecked] = useState(false);
 
   useEffect(() => {
