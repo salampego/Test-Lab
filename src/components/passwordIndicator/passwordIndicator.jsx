@@ -1,7 +1,6 @@
 import "./passwordIndicator.css";
 
 export const PasswordIndicator = ({ status }) => {
-  const ss = status;
   return (
     <>
       <div className="indicator">
