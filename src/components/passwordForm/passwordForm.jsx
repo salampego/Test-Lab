@@ -12,19 +12,22 @@ export const PasswordForm = ({ onChangePassword, onChangeType, checked }) => {
         ></input>
         <span className={s.focus_border}></span>
       </div>
-      <input
-        type="checkbox"
-        className={s.input_checkbox}
-        id="openPassword"
-        onChange={onChangeType}
-      />
-      <label htmlFor="openPassword" className={s.svgLabel}>
-        {checked ? (
-          <EyeOff width="24" height="20" />
-        ) : (
-          <EyeOn width="24" height="20" />
-        )}
-      </label>
+      <div className={s.block_eye}>
+        <input
+          type="checkbox"
+          className={s.input_checkbox}
+          id="openPassword"
+          onChange={onChangeType}
+        />
+
+        <label htmlFor="openPassword" className={s.svgLabel}>
+          {checked ? (
+            <EyeOff width="24" height="20" />
+          ) : (
+            <EyeOn width="24" height="20" />
+          )}
+        </label>
+      </div>
     </form>
   );
 };
