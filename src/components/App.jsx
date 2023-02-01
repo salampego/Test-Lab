@@ -9,7 +9,7 @@ function App() {
   const [checked, setChecked] = useState(false);
 
   useEffect(() => {
-    const letter = password.match(/[a-zA-Z]/g);
+    const letter = password.match(/[a-zA-Z\u0400-\u04ff\s]/g);
     const symbols = password.match(/[!,@,#,$,%,^,&,*,?,_,~,-,(,),",',]/g);
     const number = password.match(/\d+/g);
 
