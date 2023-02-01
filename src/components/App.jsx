@@ -9,10 +9,12 @@ function App() {
   const [checked, setChecked] = useState(false);
 
   useEffect(() => {
-    const letter = password.match(/[a-zA-Z]*/g);
-    const symbols = password.match(/[!,@,#,$,%,^,&,*,?,_,~,-,(,),",']/g);
+    const letter = password.match(/[a-zA-Z]/);
+    const symbols = password.match(/[!,@,#,$,%,^,&,*,?,_,~,-,(,),",',]/g);
     const number = password.match(/\d+/g);
-
+    // console.log(number);
+    // console.log(symbols);
+    console.log(letter);
     if (password === "") {
       setStatus("noPassword");
       return;
