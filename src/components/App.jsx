@@ -12,9 +12,7 @@ function App() {
     const letter = password.match(/[a-zA-Z]/);
     const symbols = password.match(/[!,@,#,$,%,^,&,*,?,_,~,-,(,),",',]/g);
     const number = password.match(/\d+/g);
-    // console.log(number);
-    // console.log(symbols);
-    console.log(letter);
+
     if (password === "") {
       setStatus("noPassword");
       return;
