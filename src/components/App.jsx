@@ -17,7 +17,7 @@ function App() {
       setStatus("noPassword");
       return;
     }
-    if (password.length <= 6) {
+    if (password.length <= 7) {
       setStatus("notEnough");
       return;
     }
